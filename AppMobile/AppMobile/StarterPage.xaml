@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:AppMobile.Views"
+             x:Class="AppMobile.StarterPage">
+
+    <TabBar>
+
+        <ShellContent Title="Anotações"
+                      Icon="icon_feed.png"
+                      ContentTemplate="{DataTemplate views:NotasPage}"/>
+        
+        <ShellContent Title="Sobre"
+                      Icon="icon_about.png"
+                      ContentTemplate="{DataTemplate views:SobrePage}"/>
+
+    </TabBar>
+    
+</Shell>

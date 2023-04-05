@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMobile.Views.SobrePage" Title="Informações">
+
+    <Grid RowDefinitions="Auto,*">
+        <Image Source="xamarin_logo.png"
+               BackgroundColor="{OnPlatform iOS=LightGray, Android=LightCyan}"
+               VerticalOptions="Center"
+               HeightRequest="64" />
+        <StackLayout Grid.Row="1"
+                     Margin="20"
+                     Spacing="20">
+            <Label FontSize="22">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Exemplo de App "
+                                  FontAttributes="Bold"
+                                  FontSize="22"/>
+                            <Span Text="Versão 1.0" />
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Text="Este App foi elaborado pela equipe da ATOS." />
+        </StackLayout>
+    </Grid>
+</ContentPage>

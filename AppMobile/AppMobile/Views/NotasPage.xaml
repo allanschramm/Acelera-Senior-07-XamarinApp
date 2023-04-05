@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMobile.Views.NotasPage" Title="Anotações">
+
+
+    <StackLayout Margin="20">
+
+        <Editor x:Name="txtEditor"
+                Placeholder="Faça sua anotação!"
+                HeightRequest="100" />
+        
+        <!-- Colunas igualmente espaçadas -->
+        <Grid ColumnDefinitions="*,*">
+            <Button Text="Salvar" Clicked="SalvarButton_Clicked"/>
+            <Button Grid.Column="1" Text="Remover" Clicked="RemoverButton_Clicked"/>
+        </Grid>
+    </StackLayout>
+    
+    
+</ContentPage>
