@@ -9,7 +9,11 @@
         <ShellContent Title="Anotações"
                       Icon="icon_feed.png"
                       ContentTemplate="{DataTemplate views:NotasPage}"/>
-        
+
+        <ShellContent Title="Opções"
+                      Icon="help.png"
+                      ContentTemplate="{DataTemplate views:OpcoesPage}"/>
+
         <ShellContent Title="Sobre"
                       Icon="icon_about.png"
                       ContentTemplate="{DataTemplate views:SobrePage}"/>

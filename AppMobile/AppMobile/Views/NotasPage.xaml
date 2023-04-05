@@ -9,13 +9,15 @@
         <Editor x:Name="txtEditor"
                 Placeholder="Faça sua anotação!"
                 HeightRequest="100" />
-        
+
         <!-- Colunas igualmente espaçadas -->
         <Grid ColumnDefinitions="*,*">
-            <Button Text="Salvar" Clicked="SalvarButton_Clicked"/>
-            <Button Grid.Column="1" Text="Remover" Clicked="RemoverButton_Clicked"/>
+            <Button Text="Salvar"
+                    Clicked="SalvarButton_Clicked"/>
+            <Button Grid.Column="1"
+                    Text="Remover"
+                    Clicked="RemoverButton_Clicked"/>
         </Grid>
     </StackLayout>
-    
-    
+
 </ContentPage>
