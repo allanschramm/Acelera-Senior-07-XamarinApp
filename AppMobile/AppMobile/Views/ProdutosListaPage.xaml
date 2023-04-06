@@ -1,28 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppMobile.Views.FornecedoresListaPage">
+             x:Class="AppMobile.Views.ProdutosListaPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Lista de Fornecedores"
+            <Label x:Name="labelCabecalho"
+                   Text="Produtos"
                    VerticalOptions="CenterAndExpand"
                    HorizontalOptions="CenterAndExpand"
                    FontSize="22"
-                   FontAttributes="Bold"/>
+                   FontAttributes="Bold" />
 
-            <ListView x:Name="listViewFornecedores"
-                      ItemSelected="listViewFornecedores_ItemSelected">
-                
+            <ListView x:Name="listViewProdutos">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ViewCell>     
+                        <ViewCell>
+
                             <StackLayout Padding="5">
-                                <Label Text="{Binding Nome}" FontSize="14" />
-                                <Label Text="{Binding Endereco}" FontSize="11" />
-                            </StackLayout>                            
+                                <Label Text="{Binding Codigo}" FontSize="14"/>
+                                <Label Text="{Binding Descricao}" FontSize="11"/>
+                            </StackLayout>
+
                         </ViewCell>
                     </DataTemplate>
-                </ListView.ItemTemplate>                
+                </ListView.ItemTemplate>
             </ListView>
         </StackLayout>
     </ContentPage.Content>

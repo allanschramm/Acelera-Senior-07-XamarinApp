@@ -11,7 +11,9 @@
                 FontSize="22"
                 FontAttributes="Bold" />
 
-            <Button Text="Lista de Fornecedores" />
+            <Button x:Name="btnFornecedores"
+                    Text="Lista de Fornecedores" 
+                    Clicked="btnFornecedores_Clicked"/>
             
         </StackLayout>
     </ContentPage.Content>

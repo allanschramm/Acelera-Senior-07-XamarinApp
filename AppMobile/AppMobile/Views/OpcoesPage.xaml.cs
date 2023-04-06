@@ -16,5 +16,10 @@ namespace AppMobile.Views
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void btnFornecedores_Clicked(object sender, EventArgs e)
+        {
+			Navigation.PushAsync (new FornecedoresListaPage ());
+        }
+    }
 }
